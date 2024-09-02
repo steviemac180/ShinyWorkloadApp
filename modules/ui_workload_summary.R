@@ -10,6 +10,13 @@ ui_workload_summary <- function(id) {
       choices = NULL  # Initially NULL; will be updated dynamically based on uploaded data
     ),
     
+    # New Dropdown menu (selectInput) for selecting an Assay
+    selectInput(
+      ns("assay"),  # New Input ID for the assay selection
+      "Select Assay",  # Label displayed to the user
+      choices = NULL  # Initially NULL; will be updated dynamically based on uploaded data
+    ),
+    
     # Plot output that will display the dynamic plot created in the server function
     plotOutput(ns("workload_summary_plot"))  # Correct namespaced ID for plot output
   )
