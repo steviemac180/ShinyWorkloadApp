@@ -1,0 +1,12 @@
+# R-related
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.xlsx
+*.csv
